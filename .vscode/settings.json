@@ -13,5 +13,10 @@
     "titleBar.inactiveBackground": "#0767a299",
     "titleBar.inactiveForeground": "#e7e7e799",
     "panel.border": "#0986d3"
-  }
+  },
+  "cSpell.words": [
+    "grtr",
+    "Hola",
+    "IIFE"
+  ]
 }
