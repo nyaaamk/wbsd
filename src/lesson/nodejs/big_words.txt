@@ -1,4 +1,4 @@
-  - Module: A reuseable block of code whose existence does not accidentally impact other code.
+  - Module: A reusable block of code whose existence does not accidentally impact other code.
 
   - CommonJS modules: An agreed upon standard for how code modules should be structured.
 
@@ -33,4 +33,8 @@
 
   - Mutate: To change something.
 
-  -
+  - Event: Something that has happened in our app that we can respond to.
+
+  - Event listener: The code that responds to an event.
+
+  - Magic string: A string that has some special meaning in our code.
