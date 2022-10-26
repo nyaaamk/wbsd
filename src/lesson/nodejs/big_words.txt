@@ -38,3 +38,5 @@
   - Event listener: The code that responds to an event.
 
   - Magic string: A string that has some special meaning in our code.
+
+  - Template literal: A way to concatenate strings in javascript (ES6).
