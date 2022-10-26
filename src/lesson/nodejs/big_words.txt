@@ -40,3 +40,25 @@
   - Magic string: A string that has some special meaning in our code.
 
   - Template literal: A way to concatenate strings in javascript (ES6).
+
+  - Syntactic sugar: A feature that only changes how you type something, but nothing changes under the hood.
+
+  - Asynchronous: More than one process running simultaneously.
+
+  - Synchronous: One process executing at a time.
+
+  - Callback: A function passed to some other function, which we assume will be invoked at some point.
+
+  - Non-blocking: Doing other things without stopping your programming from running.
+
+  - Buffer: A temporary holding spot for data being moved from one place to another.
+
+  - Stream: A sequence of data made available over tine.
+
+  - Binary data: Data stored in binary (sets of 1s and 0s)
+
+  - Character set: A representation of characters as numbers.
+
+  - Character encoding: How characters are stored in binary.
+
+  - Byte: 8 bits.
