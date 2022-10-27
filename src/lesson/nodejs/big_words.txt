@@ -53,7 +53,7 @@
 
   - Buffer: A temporary holding spot for data being moved from one place to another.
 
-  - Stream: A sequence of data made available over tine.
+  - Stream: A sequence of data made available over time.
 
   - Binary data: Data stored in binary (sets of 1s and 0s)
 
@@ -62,3 +62,13 @@
   - Character encoding: How characters are stored in binary.
 
   - Byte: 8 bits.
+
+  - Error-first callback: Callbacks take an error object as their first parameter.
+
+  - Chunk: A piece of data being sent through a stream.
+
+  - Abstract (base) class: A type of constructor you never work directly with, but inherit from.
+
+  - Pipe: Connecting tow streams by writing to one stream what is being read from another.
+
+  - Method chaining: A method returns an object so we can keep calling more methods.
