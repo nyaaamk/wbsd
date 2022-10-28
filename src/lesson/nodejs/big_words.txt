@@ -72,3 +72,31 @@
   - Pipe: Connecting tow streams by writing to one stream what is being read from another.
 
   - Method chaining: A method returns an object so we can keep calling more methods.
+
+  - Protocol: A set of rules two sides agree on to use when communicating.
+
+  - Port: Once a computer receives a packet, how it knows what program to send it to.
+
+  - HTTP /HyperText Transfer Protocol/: A set of rules (and a format) for data being transferred on the web.
+
+  - MIME /Multipurpose Internet Mail Extensions/ type: A standard for specifying the type of data being sent.
+
+  - Template: Text designed to be the basis for final text or content after being processed.
+
+  - API /Application Programming Interface/: A set of tools for building a software application.
+
+  - EndPoint: One URL in a web API.
+
+  - Serialize: Translating an object into a format that can be stored or transferred.
+
+  - Routing: Mapping HTTP request to content.
+
+  - Package: code... ...managed and maintained with a package management system.
+
+  - Package Management System: Software that automates installing and updating packages.
+
+  - Dependency: Code that another set of code depends on to function.
+
+  - Versioning: specifying what version of a set of code this is...
+
+  
