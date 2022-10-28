@@ -99,4 +99,12 @@
 
   - Versioning: specifying what version of a set of code this is...
 
-  
+  - Environment variables: Global variables specific to the environment (server) our code is living in.
+
+  - HTTP method: Specifies the type of action the request wishes to make.
+
+  - Middleware: Code that sits between two layers of software.
+
+  - Static: Not dynamic. | In other words, not processed by code in any way. For example HTML, CSS, and image files are "static files
+
+  - Rest /Representational State Transfer/: An architectural style for building APIs.
