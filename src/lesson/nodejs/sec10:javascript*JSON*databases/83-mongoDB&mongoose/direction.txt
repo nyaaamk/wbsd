@@ -1,0 +1,4 @@
+install => npm i express-generator -g
+create dir => express "name"
+install => npm i
+cd dir => cd "name"

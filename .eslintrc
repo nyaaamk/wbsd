@@ -1,11 +1,22 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "eqeqeq": "error",
-    "key-spacing": ["error", { "align": "colon" }],
+    "key-spacing": [
+      "error",
+      {
+        "align": "colon"
+      }
+    ],
     "space-before-function-paren": [
       2,
       {
@@ -14,9 +25,20 @@
         "asyncArrow": "always"
       }
     ],
-    "quotes": ["error", "double"],
-    "camelcase": [2, { "properties": "always" }],
-    "semi": ["error", "always"]
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "camelcase": [
+      2,
+      {
+        "properties": "always"
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
   },
   "globals": {
     "module": true
