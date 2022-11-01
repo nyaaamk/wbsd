@@ -5,7 +5,8 @@ var setupController = require("./controllers/setupController");
 
 var port = process.env.PORT || 3000;
 
-var url = "mongodb+srv://nyaaamk:Nyamk2929@cluster0.uvef8au.mongodb.net/?retryWrites=true&w=majority";
+var pass = "KJed2y0MUj0TPcsV";
+var url = `mongodb+srv://nodetest:${pass}@nodetest.qxtwfsu.mongodb.net/?retryWrites=true&w=majority`;
 
 app.use("/assets", express.static(__dirname + "/public"));
 
@@ -14,7 +15,7 @@ app.set("view engine", "ejs");
 async function connect() {
 	try {
 		await mongoose.connect(url);
-    console.log("Connected");
+		console.log("Connected");
 	} catch (e) {
 		console.log(e);
 	}

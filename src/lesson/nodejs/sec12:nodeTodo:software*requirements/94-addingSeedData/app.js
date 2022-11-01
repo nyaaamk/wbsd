@@ -5,7 +5,7 @@ var setupController = require("./controllers/setupController");
 
 var port = process.env.PORT || 3000;
 
-var url = "mongodb+srv://nyaaamk:Nyamk2929@cluster0.uvef8au.mongodb.net/?retryWrites=true&w=majority";
+var url = "";
 
 app.use("/assets", express.static(__dirname + "/public"));
 
