@@ -1,5 +1,7 @@
-// allow space \s
-// don't allow space \S
+// whiteSpace \s
+// not allow space \S
+
+const removeAllWhiteSpace = replace(/ /g, '');
 
 const mglString = /^[А-Яа-я|Үү|Өө|Ёё]{2,120}$/
 
