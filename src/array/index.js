@@ -10,16 +10,16 @@ const num = numbers.map((i) => i);
 const userAges = [
   {
     userId: 1,
-    value : 10,
+    value : 10
   },
   {
     userId: 2,
-    value : 20,
+    value : 20
   },
   {
     userId: 3,
-    value : 20,
-  },
+    value : 20
+  }
 ];
 console.log("userAges", userAges);
 
@@ -27,18 +27,18 @@ const userData = [
   {
     _id : 1,
     name: "name1",
-    age : 0,
+    age : 0
   },
   {
     _id : 2,
     name: "name2",
-    age : 0,
+    age : 0
   },
   {
     _id : 3,
     name: "name3",
-    age : 0,
-  },
+    age : 0
+  }
 ];
 console.log("userData", userData);
 
