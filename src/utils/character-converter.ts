@@ -34,12 +34,8 @@ const map = {
   "я": "ya"
 };
 
-const str = "";
-
-const translate = (str) => {
-  return str.split("").map((char) => {
+const translate = (input) => {
+  return input.split("").map((char) => {
     return map[char] || char;
   }).join("");
 };
-
-console.log("\n>>>", translate(str));

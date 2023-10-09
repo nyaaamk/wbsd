@@ -1,7 +1,7 @@
 // whiteSpace \s
 // not allow space \S
 
-export const removeAllWhiteSpace = replace(/ /g, "");
+export const removeAllWhiteSpace = "   John     Doe    ".replace(/ /g, "");
 
 export const parsedSTring = "   John     Doe    ".replace(/ +/g, " ").trim();
 

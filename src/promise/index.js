@@ -23,7 +23,6 @@ const delay = () => { // runned
 //   }, 100);
 // };
 
-
 const main = async () => {
 
   console.log(1);
@@ -36,6 +35,5 @@ const main = async () => {
   await delay();
 
 };
-
 
 main();
