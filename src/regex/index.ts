@@ -7,7 +7,9 @@ export const parsedSTring = "   John     Doe    ".replace(/ +/g, " ").trim();
 
 export const mglString = /^[А-Яа-я|Үү|Өө|Ёё|\s|.]{2,255}$/;
 
-export const engString = /^[A-Za-z]{2,120}$/;
+export const either = /^([А-Яа-я|Үү|Өө|Ёё]{2}[0-9]{8}|[0-9]{7})$/;
+
+export const engString = /^[A-Za-z|-]{2,120}$/;
 
 export const phone = /^[(9|8|6]{1}[0-9]{7}$/;
 
