@@ -1,8 +1,14 @@
 {
+  "name": "wbsd",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dayjs": "^1.11.12"
   },
   "devDependencies": {
-    "@types/node": "^22.4.2"
+    "@types/eslint": "^8.56.11",
+    "@types/node": "^22.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.57.0"
   }
 }
