@@ -53,6 +53,8 @@ export const optionalPassword = /^((?=.*[\d])(?=.*[a-z])(?=.*[A-Z])|(?=.*[a-z])(
 export const HHmm = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
 export const HHmm2 = /^(?:[01]\d|2[0-3]):(?:[0-5]\d)$/;
 
+const usPhoneNumber = /^(?:\+1\s*|1\s*)?(?:\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}$/;
+
 export const stringValidator = (string: string, regex: string) => {
   const check = string.match(regex);
   return check?.[0] === string;
