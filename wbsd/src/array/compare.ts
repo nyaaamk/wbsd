@@ -23,7 +23,7 @@ const values3 = [{
   name    : "color1"
 }];
 
-const compare2Arrays = (arr1: any, arr2: any) => {
+const compare2Arrays = (arr1: any[], arr2: any[]) => {
   return (
     arr1.length === arr2.length &&
     arr1.every((elm1: any) => arr2.some((elm2: any) =>
@@ -35,9 +35,19 @@ const compare2Arrays = (arr1: any, arr2: any) => {
 console.log(">>> 1", compare2Arrays(values1, values2));
 console.log(">>> 2", compare2Arrays(values1, values3));
 
-const compareN = (arr: any[]) => { // TODO: check and complete
+export const compareN = (arr: any[]) => { // TODO: check and complete
   const n = arr.length;
   arr.forEach((a, index) => {
-
+    console.log("n >>>", n, a, index);
   });
+};
+
+export const checkDuplicate = (entry: string[]) => {
+  let duplicated = false;
+
+  entry.forEach((e, index) => {
+    if (entry.findIndex((i) => i === e) !== index) duplicated = true;
+  });
+
+  return duplicated;
 };

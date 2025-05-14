@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-enum DURATION_TYPES  {
+enum DURATION_TYPES {
   HOUR = "HOUR",
   MINUTE = "MINUTE"
 }
