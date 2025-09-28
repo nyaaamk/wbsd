@@ -1,4 +1,4 @@
-const str = "okkao1825@gmail.com";
+const str = "sample123@gmail.com";
 
 const maskEmail = (mail: string) => {
   const [email, domain] = mail.split("@");
