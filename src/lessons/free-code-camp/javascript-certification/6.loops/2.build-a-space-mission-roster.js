@@ -1,8 +1,6 @@
-import { IPayload } from "../../../../types";
+const squad = [];
 
-const squad: IPayload[] = [];
-
-const firstAstronaut: IPayload = {
+const firstAstronaut = {
   id           : 1,
   name         : "Andy",
   role         : "Commander",
@@ -10,7 +8,7 @@ const firstAstronaut: IPayload = {
   priority     : 3
 };
 
-function addCrewMember (crew: IPayload[], astronaut: IPayload){
+function addCrewMember (crew, astronaut){
   for (let i = 0; i < crew.length; i++) {
     if (crew[i].id === astronaut.id) {
       console.log("Duplicate ID: " + astronaut.id);
@@ -22,7 +20,7 @@ function addCrewMember (crew: IPayload[], astronaut: IPayload){
 
 addCrewMember(squad, firstAstronaut);
 
-const remainingCrew: IPayload[] = [
+const remainingCrew = [
   { id: 2, name: "Bart", role: "Pilot", isEVAEligible: false, priority: 8 },
   { id: 3, name: "Caroline", role: "Engineer", isEVAEligible: true, priority: 4 },
   { id: 4, name: "Diego", role: "Scientist", isEVAEligible: false, priority: 1 },
@@ -38,7 +36,7 @@ for (let i = 0; i < remainingCrew.length; i++) {
   addCrewMember(squad, remainingCrew[i]);
 }
 
-function swapCrewMembers (crew: IPayload[], fromIndex: number, toIndex: number){
+function swapCrewMembers (crew, fromIndex, toIndex){
   if (
     fromIndex < 0 ||
     toIndex < 0 ||
@@ -57,7 +55,7 @@ function swapCrewMembers (crew: IPayload[], fromIndex: number, toIndex: number){
 
 const updatedSquad = swapCrewMembers(squad, 2, 5);
 
-const sortByPriorityDescending = (crew: IPayload[]) => {
+const sortByPriorityDescending = (crew) => {
   for (let i = 0; i < crew.length -1; i++) {
     for (let j = 0; j < crew.length -1 -i; j++) {
       if (crew[j].priority < crew[j +1].priority) {
@@ -69,8 +67,8 @@ const sortByPriorityDescending = (crew: IPayload[]) => {
   }
 };
 
-function getEVAReadyCrew (crew: IPayload[]){
-  const eligible: IPayload[] = [];
+function getEVAReadyCrew (crew){
+  const eligible = [];
   for (const astronaut of crew) {
     if (astronaut.isEVAEligible) eligible.push(astronaut);
   }

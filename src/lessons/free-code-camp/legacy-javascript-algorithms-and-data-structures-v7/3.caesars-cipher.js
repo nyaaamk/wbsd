@@ -1,4 +1,4 @@
-const rot13 = (str: string) => {
+const rot13 = (str) => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const full = alphabet.length;
   const half = full / 2;

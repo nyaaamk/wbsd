@@ -14,10 +14,10 @@ const romanNumerals = [
   [1, "I"]
 ];
 
-const convertToRoman = (num: number) => {
+const convertToRoman = (num) => {
   let result = "";
 
-  for (const [value, numeral] of romanNumerals as [number, string][]) {
+  for (const [value, numeral] of romanNumerals) {
     while (num >= value) {
       result += numeral;
       num -= value;

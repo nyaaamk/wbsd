@@ -45,6 +45,7 @@
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "no-multi-spaces": ["error", { "ignoreEOLComments": false }],
     "no-trailing-spaces": ["error", { "skipBlankLines": false }],
+    "no-undef": "warn",
     "no-useless-escape": "off",
     "object-curly-spacing": ["error", "always"],
     "quotes": ["error", "double"],

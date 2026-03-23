@@ -6,7 +6,11 @@
   "author": "nyaaamk",
   "description": "...",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "clean": "rm -rf ./build/*",
+    "build-tsc": "tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "build": "npm run clean && npm run build-tsc"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

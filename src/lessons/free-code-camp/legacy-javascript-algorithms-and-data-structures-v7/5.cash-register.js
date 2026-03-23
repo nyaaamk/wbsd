@@ -1,5 +1,5 @@
 /* eslint-disable prefer-const */
-const PAPERS: { [key: string]: number } = {
+const PAPERS = {
   "PENNY"      : 0.01,
   "NICKEL"     : 0.05,
   "DIME"       : 0.1,
@@ -11,11 +11,9 @@ const PAPERS: { [key: string]: number } = {
   "ONE HUNDRED": 100.0
 };
 
-type ICash = [string, number];
-
-function checkCashRegister (price: number, cash: number, cid: ICash[]){
+function checkCashRegister (price, cash, cid){
   let amountChange = cash - price;
-  const change = [] as ICash[];
+  const change = [];
   let amountTotal = cid.reduce((acc, itr) => acc + itr[1], 0);
   amountTotal = Math.round(amountTotal * 100) / 100, amountTotal;
 
