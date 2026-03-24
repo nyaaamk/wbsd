@@ -8,7 +8,7 @@ const firstAstronaut = {
   priority     : 3
 };
 
-function addCrewMember (crew, astronaut){
+const addCrewMember = (crew, astronaut) => {
   for (let i = 0; i < crew.length; i++) {
     if (crew[i].id === astronaut.id) {
       console.log("Duplicate ID: " + astronaut.id);
@@ -16,7 +16,7 @@ function addCrewMember (crew, astronaut){
     }
   }
   crew.push(astronaut);
-}
+};
 
 addCrewMember(squad, firstAstronaut);
 
@@ -36,7 +36,7 @@ for (let i = 0; i < remainingCrew.length; i++) {
   addCrewMember(squad, remainingCrew[i]);
 }
 
-function swapCrewMembers (crew, fromIndex, toIndex){
+const swapCrewMembers = (crew, fromIndex, toIndex) => {
   if (
     fromIndex < 0 ||
     toIndex < 0 ||
@@ -51,27 +51,55 @@ function swapCrewMembers (crew, fromIndex, toIndex){
   updatedCrew[fromIndex] = updatedCrew.splice(toIndex, 1, updatedCrew[fromIndex])[0];
 
   return updatedCrew;
-}
+};
 
 const updatedSquad = swapCrewMembers(squad, 2, 5);
 
 const sortByPriorityDescending = (crew) => {
-  for (let i = 0; i < crew.length -1; i++) {
-    for (let j = 0; j < crew.length -1 -i; j++) {
-      if (crew[j].priority < crew[j +1].priority) {
+  for (let i = 0; i < crew.length - 1; i++) {
+    for (let j = 0; j < crew.length - 1 - i; j++) {
+      if (crew[j].priority < crew[j + 1].priority) {
         const temp = crew[j];
-        crew[j] = crew[j +1];
-        crew[j +1] = temp;
+        crew[j] = crew[j + 1];
+        crew[j + 1] = temp;
       }
     }
   }
 };
 
-function getEVAReadyCrew (crew){
+const getEVAReadyCrew = (crew) => {
   const eligible = [];
   for (const astronaut of crew) {
     if (astronaut.isEVAEligible) eligible.push(astronaut);
   }
+  sortByPriorityDescending(eligible);
 
   return eligible;
-}
+};
+
+const EVAReadySquad = getEVAReadyCrew(updatedSquad);
+const chunkCrew = (crew, size) => {
+  if (size < 1) {
+    console.log("Chunk size must be >= 1");
+    return;
+  }
+
+  const chunks = [];
+  for (let i = 0; i < crew.length; i += size) {
+    chunks.push(crew.slice(i, i + size));
+  }
+
+  return chunks;
+};
+
+const EVAChunks = chunkCrew(EVAReadySquad, 3);
+
+const printCrewSummary = (crew) => {
+  const sorted = crew.slice();
+  sortByPriorityDescending(sorted);
+  for (const astronaut of sorted) {
+    console.log(astronaut.name);
+  }
+};
+
+printCrewSummary(updatedSquad);

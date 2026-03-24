@@ -6,7 +6,7 @@
   "rules": {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-empty-function": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-var-requires": "off",
     "camelcase": [2, { "properties": "always" }],
     "comma-dangle": ["error", "never"],
@@ -41,11 +41,12 @@
         "ignoreUrls": true
       }
     ],
+    "no-prototype-builtins": "off",
     "no-mixed-spaces-and-tabs": "off",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "no-multi-spaces": ["error", { "ignoreEOLComments": false }],
     "no-trailing-spaces": ["error", { "skipBlankLines": false }],
-    "no-undef": "warn",
+    "no-undef": "off",
     "no-useless-escape": "off",
     "object-curly-spacing": ["error", "always"],
     "quotes": ["error", "double"],
