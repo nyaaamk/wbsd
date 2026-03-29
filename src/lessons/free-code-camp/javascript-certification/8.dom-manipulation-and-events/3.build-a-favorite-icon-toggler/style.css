@@ -1,0 +1,21 @@
+.item-list {
+    list-style: none;
+    padding: 20px;
+}
+
+.item-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.favorite-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.filled {
+    color: red;
+    transform: scale(1.2);
+}
