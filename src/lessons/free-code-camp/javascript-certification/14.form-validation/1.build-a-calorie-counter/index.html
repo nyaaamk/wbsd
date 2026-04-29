@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,13 +12,7 @@
       <div class="container">
         <form id="calorie-counter">
           <label for="budget">Budget</label>
-          <input
-            type="number"
-            min="0"
-            id="budget"
-            placeholder="Daily calorie budget"
-            required
-          />
+          <input type="number" min="0" id="budget" placeholder="Daily calorie budget" required />
           <fieldset id="breakfast">
             <legend>Breakfast</legend>
             <div class="input-container"></div>
@@ -53,14 +47,13 @@
             </span>
           </div>
           <div>
-            <button type="submit">
-              Calculate Remaining Calories
-            </button>
+            <button type="submit">Calculate Remaining Calories</button>
             <button type="button" id="clear">Clear</button>
           </div>
         </form>
-
+        <div id="output" class="output hide"></div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
